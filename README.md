@@ -52,3 +52,13 @@ To add all the files
 ```
 git add .
 ```
+
+The next step is to commit the files. 
+Commit does that from our local pushes into the staging enviornment.
+Always check [Atlassian tutorial](https://www.atlassian.com/git/tutorials/saving-changes/git-commit) to undertand more about the commit.
+
+We are going to use the below code to commit
+```
+git commit -m "commit message"
+```
+Because, we need to add a message along with the commit.
