@@ -93,7 +93,7 @@ Now we can check our Github repository to see the changes
 
 ## Building the Front-End Application
 
-Create a new folder called ```template```. inside that, create the HTML page. For demo purpose just create a simple 'hello world' webpage.
+Create a new folder called ```templates```. inside that, create the HTML page. For demo purpose just create a simple 'hello world' webpage.
 
 Create a new file called ```app.py```.
 
@@ -119,4 +119,4 @@ Test the predict_api is working using Postman. Use the below JSON format to test
     }
 }
 ```
-
+Create the ```homne.html``` and also make changes in ```app.py``` and check it is working.
