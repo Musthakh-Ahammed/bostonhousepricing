@@ -120,3 +120,17 @@ Test the predict_api is working using Postman. Use the below JSON format to test
 }
 ```
 Create the ```homne.html``` and also make changes in ```app.py``` and check it is working.
+
+
+## Deploying in heroku platform
+
+To deploy in the heroku platform, we first need to create a file calles ```Procfile``` . VS code will automatically recoganize the extension. This file specifies that once we upload this into heroku, what specific command needs to run by the app as soon as it starts.
+
+We are also using the help of gunicorn. It is a pure python http server for wsgi applications. It allows you to run python applications concurrently by multiple processes
+```
+web: gunicorn app:app
+```
+The gunicorn will also distribute all the requests to multiple instances to run the app smoothly.
+The first "app" in the above code is the app name.
+
+When we call the gunicorn, we also need to add it in the ```requirements.txt``` file
